@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     border-radius: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: whitesmoke;
 }
 
-h1{
+h1 {
     font-family: 'Rubik Scribble', cursive;
     font-size: 60px;
     margin: 0;
     text-align: center;
 }
 
-#alinhar{
+#alinhar {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -27,21 +27,21 @@ h1{
     align-items: center;
 }
 
-#rr{
+#rr {
     cursor: pointer;
     background-color: #FA8072;
     color: white;
     font-weight: bold;
     padding: 18px;
     font-size: 22px;
-    border-radius: 59%;
+    border-radius: 50%;
 }
 
-#rr:hover{
+#rr:hover {
     background-color: #b35b52;
 }
 
-#jogadores span{
+#jogadores span {
     background-color: #9C999A;
     color: white;
     font-weight: bold;
@@ -50,34 +50,34 @@ h1{
     font-size: 22px;
 }
 
-#jogadores span i{
+#jogadores span i {
     margin-left: 20px;
     padding-left: 12px;
     border-left: solid 2px #555;
 }
 
-button:disabled{
+button:disabled {
     background-color: #9090FF;
     border: solid 1px #555 !important;
     color: white;
 }
 
-button:disabled:hover{
+button:disabled:hover {
     background-color: #5657FF;
     color: white;
 }
 
-.jogadorAtivo{
+.jogadorAtivo {
     background-color: #01C929 !important;
     transition: background-color 0.5s;
 }
 
-#jogadores{
+#jogadores {
     margin-bottom: 40px;
     margin-top: 40px;
 }
 
-#tabuleiro{
+#tabuleiro {
     display:flex;
     flex-wrap: wrap;
     width: 600px;
@@ -86,84 +86,88 @@ button:disabled:hover{
     border: 4px solid black;
 }
 
-#alinhar-3{
+#alinhar-3 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#tabuleiro button{
+#tabuleiro button {
     flex-basis: 25%;
     height: 119px;
     font-size: 35px;
     border: solid 1px #555;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(145, 176, 207, 0.4);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 @media(max-width: 650px) {
-    h1{
+    h1 {
         font-size: 55px;
     }
 }
 
 @media(max-width: 610px) {
-    #tabuleiro{
+    #tabuleiro {
         width: 500px;
         height: 502px;
     }
 
-    #tabuleiro button{
+    #tabuleiro button {
         height: 99px;
     }
 
-    #jogadores{
+    #jogadores {
         margin-left: 40px;
     }
 
-    #rr{
+    #rr {
         margin-right: 40px;
     }
 }
 
 @media(max-width: 540px) {
-    #jogadores{
+    #jogadores {
         margin-left: 15px;
     }
 
-    #rr{
+    #rr {
         margin-right: 15px;
     }
 }
 
 @media(max-width: 500px) {
-    #jogadores{
+    #jogadores {
         margin-left: 5px;
     }
 
-    #rr{
+    #rr {
         margin-right: 5px;
     }
 }
 
 @media(max-width: 430px) {
-    #jogadores{
+    #jogadores {
         margin-left: 0;
     }
 
-    #rr{
+    #rr {
         margin-right: 0;
     }
 }
 
 @media(max-width: 412px) {
-    h1{
+    h1 {
         font-size: 50px;
     }
 
-    #jogadores{
+    #jogadores {
         display: flex;
         flex-direction: column;
         margin-left: 5px;
@@ -171,70 +175,70 @@ button:hover{
         margin-top: 20px;
     }
 
-    #jogadores span{
+    #jogadores span {
         margin-bottom: 10px;
     }
 
-    #rr{
+    #rr {
         margin-right: 5px;
         padding: 20px;
         font-size: 50px;
         border-radius: 80px;
     }
 
-    #tabuleiro{
+    #tabuleiro {
         width: 400px;
         height: 402px;
     }
 
-    #tabuleiro button{
+    #tabuleiro button {
         height: 79px;
     }
 }
 
 @media(max-width: 370px) {
-    h1{
+    h1 {
         font-size: 45px;
     }
 
-    #tabuleiro{
+    #tabuleiro {
         width: 350px;
         height: 352px;
     }
 
-    #tabuleiro button{
+    #tabuleiro button {
         height: 69px;
     }
 }
 
 @media(max-width: 320px) {
-    h1{
+    h1 {
         font-size: 45px;
     }
 
-    #jogadores span{
+    #jogadores span {
         font-size: 18px;
     }
 
-    #rr{
+    #rr {
         margin-right: 10px;
     }
 
-    #tabuleiro{
+    #tabuleiro {
         width: 300px;
         height: 302px;
     }
 
-    #tabuleiro button{
+    #tabuleiro button {
         height: 59px;
     }
 }
 
 @media(max-width: 270px) {
-    #jogadores span{
+    #jogadores span {
         font-size: 16px;
     }
-    #jogadores span i{
+    #jogadores span i {
         margin-left: 10px;
         padding-left: 6px;
     }
